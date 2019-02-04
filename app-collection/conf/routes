@@ -1,0 +1,139 @@
+GET         /                                    controllers.RestController.index
+
+GET         /health/                             controllers.RestController.health
+
+POST        /login/                              controllers.RestController.signIn
+
+GET         /logout/                             controllers.RestController.logOut
+
+GET         /assets/*file                        controllers.Assets.at(path="/public", file)
+
+#==========================================================================
+
+GET         /api/v1/project/list/                controllers.ProjectController.list
+
+POST        /api/v1/project/                     controllers.ProjectController.update
+
+GET         /api/v1/project/:id/                 controllers.ProjectController.byId(id: Long)
+
+#==========================================================================
+
+GET         /api/v1/risk/list/                   controllers.RiskController.list
+
+POST        /api/v1/risk/                        controllers.RiskController.update
+
+GET         /api/v1/risk/:id/                    controllers.RiskController.byId(id: Long)
+
+#==========================================================================
+
+GET         /api/v1/task/list/                   controllers.TaskController.list
+
+POST        /api/v1/task/                        controllers.TaskController.update
+
+GET         /api/v1/task/:id/                    controllers.TaskController.byId(id: Long)
+
+#==========================================================================
+
+GET         /api/v1/strategy/list/               controllers.StrategyController.list
+
+POST        /api/v1/strategy/                    controllers.StrategyController.update
+
+GET         /api/v1/strategy/:id/                controllers.StrategyController.byId(id: Long)
+
+#==========================================================================
+
+GET         /api/v1/budget/list/                 controllers.BudgetController.list
+
+POST        /api/v1/budget/                      controllers.BudgetController.update
+
+GET         /api/v1/budget/:id/                  controllers.BudgetController.byId(id: Long)
+
+#==========================================================================
+
+GET         /api/v1/individual/list/             controllers.IndividualController.list
+
+POST        /api/v1/individual/                  controllers.IndividualController.update
+
+GET         /api/v1/individual/:id/              controllers.IndividualController.byId(id: Long)
+
+#==========================================================================
+
+GET         /api/v1/legalentity/list/            controllers.LegalEntityController.list
+
+POST        /api/v1/legalentity/                 controllers.LegalEntityController.update
+
+GET         /api/v1/legalentity/:id/             controllers.LegalEntityController.byId(id: Long)
+
+#==========================================================================
+
+GET         /api/v1/address/list/                controllers.AddressController.list
+
+POST        /api/v1/address/                     controllers.AddressController.update
+
+GET         /api/v1/address/:id/                 controllers.AddressController.byId(id: Long)
+
+#==========================================================================
+
+GET         /api/v1/telephone/list/              controllers.TelephoneController.list
+
+POST        /api/v1/telephone/                   controllers.TelephoneController.update
+
+GET         /api/v1/telephone/:id/               controllers.TelephoneController.byId(id: Long)
+
+#==========================================================================
+
+GET         /api/v1/email/list/                  controllers.EmailController.list
+
+POST        /api/v1/email/                       controllers.EmailController.update
+
+GET         /api/v1/email/:id/                   controllers.EmailController.byId(id: Long)
+
+#==========================================================================
+
+GET         /api/v1/agreement/list/              controllers.CreditAgreementController.list
+
+POST        /api/v1/agreement/                   controllers.CreditAgreementController.update
+
+GET         /api/v1/agreement/:id/               controllers.CreditAgreementController.byId(id: Long)
+
+#==========================================================================
+
+GET         /api/v1/attachment/list/             controllers.AttachmentController.list
+
+POST        /api/v1/attachment/                  controllers.AttachmentController.update
+
+GET         /api/v1/attachment/:id/              controllers.AttachmentController.byId(id: Long)
+
+#==========================================================================
+
+GET         /api/v1/creditschedule/list/         controllers.CreditScheduleController.list
+
+POST        /api/v1/creditschedule/              controllers.CreditScheduleController.update
+
+GET         /api/v1/creditschedule/:id/          controllers.CreditScheduleController.byId(id: Long)
+
+#==========================================================================
+
+GET         /api/v1/pledgeagreement/list/        controllers.PledgeAgreementController.list
+
+POST        /api/v1/pledgeagreement/             controllers.PledgeAgreementController.update
+
+GET         /api/v1/pledgeagreement/:id/         controllers.PledgeAgreementController.byId(id: Long)
+
+#==========================================================================
+
+GET         /api/v1/forcast/list/                controllers.ForcastController.list
+
+POST        /api/v1/forcast/                     controllers.ForcastController.update
+
+GET         /api/v1/forcast/:id/                 controllers.ForcastController.byId(id: Long)
+
+#==========================================================================
+
+GET         /api/v1/plegdeobject/list/           controllers.PledgeObjectController.list
+
+POST        /api/v1/plegdeobject/                controllers.PledgeObjectController.update
+
+GET         /api/v1/plegdeobject/:id/            controllers.PledgeObjectController.byId(id: Long)
+
+#==========================================================================

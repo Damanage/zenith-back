@@ -1,0 +1,1 @@
+-Xms512M -Xmx1024M -Xss1M -XX:+CMSClassUnloadingEnabled -Djava.security.policy=/media/hogmuzzle/D/work/app-collection/conf/runtime.policy
