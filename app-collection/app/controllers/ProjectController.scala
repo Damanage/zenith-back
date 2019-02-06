@@ -19,6 +19,7 @@ class ProjectController @Inject()(secured: SecuredAction,
 
   def list: Action[AnyContent] = secured.async { req =>
     Future {
+      println("---->>"+(Project.jsonContext.toJson(Project.find().findList())))
       Ok(Project.jsonContext.toJson(Project.find().findList())).as(MediaTypes.`application/json`.value)
     }
   }

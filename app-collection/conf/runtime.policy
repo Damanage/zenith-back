@@ -1,3 +1,3 @@
-grant codeBase "file:/home/hogmuzzle/.ivy2/cache/org.apache.derby/derby/jars/*" {
+grant codeBase "file:/home/rasty/.ivy2/cache/org.apache.derby/derby/jars/*" {
     permission org.apache.derby.security.SystemPermission "engine", "usederbyinternals";
 };

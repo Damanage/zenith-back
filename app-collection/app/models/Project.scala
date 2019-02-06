@@ -22,11 +22,11 @@ class Project extends BaseEntity {
   @OneToOne
   @JoinColumn(name = "curator_id")
   @BeanProperty
-  var curator: User = _
+  var curator_id: String = _
   @OneToOne
   @JoinColumn(name = "manager_id")
   @BeanProperty
-  var manager: User = _
+  var manager_id: String = _
   @BeanProperty
   var debt: JBigInt = _
   @BeanProperty
